@@ -3,7 +3,6 @@ import { Matrix4, MeshStandardMaterial, Texture } from 'three'
 type UninitializedUniform<Value> = { value: Value | null }
 
 export class MeshReflectorMaterial extends MeshStandardMaterial {
-  [x: string]: any
   private _tDepth: UninitializedUniform<Texture> = { value: null }
   private _tDiffuse: UninitializedUniform<Texture> = { value: null }
   private _tDiffuseBlur: UninitializedUniform<Texture> = { value: null }
